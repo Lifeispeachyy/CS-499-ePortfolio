@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-3">Add Trip</h2>
+
+  <form *ngIf="addForm" [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="mb-2">
+      <label class="form-label">Code:</label>
+      <input type="text" formControlName="code" class="form-control">
+    </div>
+
+    <div class="mb-2">
+      <label class="form-label">Name:</label>
+      <input type="text" formControlName="name" class="form-control">
+    </div>
+
+    <div class="mb-2">
+      <label class="form-label">Length:</label>
+      <input type="text" formControlName="length" class="form-control">
+    </div>
+
+    <div class="mb-2">
+      <label class="form-label">Start:</label>
+      <input type="date" formControlName="start" class="form-control">
+    </div>
+
+    <div class="mb-2">
+      <label class="form-label">Resort:</label>
+      <input type="text" formControlName="resort" class="form-control">
+    </div>
+
+    <div class="mb-2">
+      <label class="form-label">Per Person:</label>
+      <input type="text" formControlName="perPerson" class="form-control">
+    </div>
+
+    <div class="mb-2">
+      <label class="form-label">Image Name:</label>
+      <input type="text" formControlName="image" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Description:</label>
+      <input type="text" formControlName="description" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>
