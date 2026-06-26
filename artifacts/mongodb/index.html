@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MongoDB Database Artifact</title>
+    <title>MongoDB Dashboard - Artifact</title>
 
     <style>
         body {
@@ -20,30 +20,28 @@
             margin-bottom: 20px;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        nav ul li {
-            margin: 8px 0;
-        }
-
-        a {
+        nav a {
+            margin-right: 15px;
             color: #1a73e8;
             text-decoration: none;
             font-weight: 500;
         }
 
-        a:hover {
+        nav a:hover {
             text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
         }
 
         hr {
             margin: 30px 0;
         }
     </style>
-    
 </head>
 
 <body>
@@ -56,45 +54,95 @@
     </nav>
 
     <header>
-        <h1>MongoDB Database Project</h1>
-        <h2>Database Enhancement Artifact</h2>
+        <h1>Grazioso Salvare MongoDB Dashboard</h1>
+        <h2>Database Systems Enhancement</h2>
     </header>
 
     <section>
-        <h3>Artifact Description</h3>
+        <h3>Artifact Narrative</h3>
         <p>
-            This artifact demonstrates database design and implementation using MongoDB.
-            It focuses on storing, retrieving, and managing structured application data.
+            This artifact is a MongoDB-based dashboard application developed using Python, Dash, and PyMongo.
+            It demonstrates database integration, CRUD operations, dynamic filtering, and data visualization
+            for animal rescue data from the Austin Animal Center dataset.
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Existing Functionality</h3>
+        <p>
+            The dashboard connects to a MongoDB database and retrieves animal rescue records using CRUD operations.
+            Users can filter records based on rescue type, view results in a dynamic data table, and visualize
+            breed distributions through interactive charts. The application uses Python Dash callbacks to update
+            the interface dynamically based on user input.
         </p>
     </section>
 
     <section>
-        <h3>Original vs Enhanced Version</h3>
+        <h3>Areas for Improvement</h3>
         <p>
-<img src="screenshots/connection.png" width="700">
-<img src="screenshots/queries.png" width="700">
-<img src="screenshots/layout.png" width="700">
-<img src="screenshots/callbacks.png" width="700">
-<img src="screenshots/visual.png" width="700">
+            The current implementation uses basic filtering queries that do not fully leverage indexing or optimized
+            query strategies. As the dataset size increases, performance may degrade due to unoptimized retrieval logic.
+            Additionally, validation of incoming data is minimal, increasing the risk of inconsistent or malformed
+            records affecting dashboard output. Some query logic is also repeated across functions, reducing maintainability.
+        </p>
+    </section>
+
+    <section>
+        <h3>Planned Enhancements</h3>
+        <p>
+            Planned improvements include implementing indexed query optimization, refactoring repeated query logic
+            into reusable functions, and enhancing data validation. Additional improvements include using aggregation
+            pipelines to improve query efficiency and restructuring database access patterns for better scalability
+            and maintainability.
         </p>
     </section>
 
     <section>
         <h3>Enhancements Implemented</h3>
         <ul>
-            <li>Improved database structure and schema design</li>
-            <li>Enhanced query efficiency and data handling</li>
-            <li>Strengthened integration with application layer</li>
+            <li>Improved MongoDB query structure for rescue-type filtering</li>
+            <li>Refactored reusable database access functions</li>
+            <li>Enhanced dashboard responsiveness through optimized callbacks</li>
         </ul>
     </section>
 
     <section>
         <h3>Skills Demonstrated</h3>
         <ul>
-            <li>NoSQL database design</li>
-            <li>MongoDB query operations</li>
-            <li>Data modeling and persistence</li>
+            <li>MongoDB CRUD operations and querying</li>
+            <li>Python Dash application development</li>
+            <li>Data visualization and filtering logic</li>
+            <li>Database integration and API communication</li>
+            <li>Performance and scalability analysis</li>
         </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>System Evidence</h3>
+
+        <p>
+            The following screenshots demonstrate MongoDB connectivity, query execution, dashboard layout,
+            callback logic, and visualization output within the Grazioso Salvare dashboard application.
+        </p>
+
+        <h4>Database Connection (CRUD Setup)</h4>
+        <img src="screenshots/connection.png">
+
+        <h4>Filtered Query Results</h4>
+        <img src="screenshots/queries.png">
+
+        <h4>Dashboard Layout</h4>
+        <img src="screenshots/layout.png">
+
+        <h4>Callback Logic (Dynamic Filtering)</h4>
+        <img src="screenshots/callbacks.png">
+
+        <h4>Visualization Output</h4>
+        <img src="screenshots/visual.png">
     </section>
 
 </body>
