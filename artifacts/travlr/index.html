@@ -20,30 +20,28 @@
             margin-bottom: 20px;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        nav ul li {
-            margin: 8px 0;
-        }
-
-        a {
+        nav a {
+            margin-right: 15px;
             color: #1a73e8;
             text-decoration: none;
             font-weight: 500;
         }
 
-        a:hover {
+        nav a:hover {
             text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
         }
 
         hr {
             margin: 30px 0;
         }
     </style>
-    
 </head>
 
 <body>
@@ -61,39 +59,89 @@
     </header>
 
     <section>
-        <h3>Artifact Description</h3>
+        <h3>Artifact Narrative</h3>
         <p>
-            This artifact is a travel booking application designed to demonstrate software design and
-            engineering principles including modular structure, application logic, and user interaction flow.
+            This artifact is a full-stack travel booking application designed using the MEAN stack 
+            (MongoDB, Express, Angular, Node.js). It demonstrates key software engineering concepts, 
+            including modular application structure, RESTful API communication, authentication, 
+            and database integration.
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Existing Functionality</h3>
+        <p>
+            The application provides a customer-facing travel browsing interface and an administrative 
+            single-page application for managing trip data. The backend uses Express to expose RESTful 
+            API endpoints connected to a MongoDB database using Mongoose. The Angular frontend consumes 
+            these APIs through reusable services and components. Authentication is implemented using JWT 
+            to restrict access to protected administrative routes and CRUD operations.
         </p>
     </section>
 
     <section>
-        <h3>Original vs Enhanced Version</h3>
+        <h3>Areas for Improvement</h3>
         <p>
-<img src="screenshots/structure.png" width="700">
-<img src="screenshots/routes.png" width="700">
-<img src="screenshots/auth.png" width="700">
-<img src="screenshots/frontend.png" width="700">
+            While the application is functional and well-structured, it lacks role-based access control, 
+            limiting scalability for multiple user types. Input validation is partially distributed between the 
+            frontend and backend layers, reducing maintainability and consistency. Additionally, error 
+            handling is not fully centralized, which introduces code duplication across services and routes.
+        </p>
+    </section>
+
+    <section>
+        <h3>Planned Enhancements</h3>
+        <p>
+            Planned improvements include implementing role-based authentication using JWT claims and 
+            Express middleware, centralizing validation logic, and improving defensive programming practices. 
+            These enhancements improve security, scalability, and maintainability while aligning with 
+            professional software engineering standards.
         </p>
     </section>
 
     <section>
         <h3>Enhancements Implemented</h3>
         <ul>
-            <li>Improved application structure and organization</li>
-            <li>Enhanced functionality and maintainability</li>
-            <li>Refactored code for better readability</li>
+            <li>Implemented structured modular MEAN stack architecture</li>
+            <li>Strengthened authentication using JWT-based route protection</li>
+            <li>Improved separation of concerns between frontend and backend services</li>
         </ul>
     </section>
 
     <section>
         <h3>Skills Demonstrated</h3>
         <ul>
-            <li>Software design principles</li>
-            <li>Application development</li>
-            <li>Code refactoring</li>
+            <li>Full-stack software engineering (MEAN stack)</li>
+            <li>RESTful API design and integration</li>
+            <li>Authentication and secure route handling</li>
+            <li>Modular application architecture</li>
+            <li>Code analysis and refactoring</li>
         </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>System Architecture Evidence</h3>
+
+        <p>
+            The following screenshots demonstrate the structure and implementation of the application, 
+            including backend routing, frontend integration, authentication logic, and system design.
+        </p>
+
+        <h4>Application Structure</h4>
+        <img src="screenshots/structure.png">
+
+        <h4>Backend Routing (Express API)</h4>
+        <img src="screenshots/routes.png">
+
+        <h4>Authentication Layer</h4>
+        <img src="screenshots/auth.png">
+
+        <h4>Frontend Integration</h4>
+        <img src="screenshots/frontend.png">
     </section>
 
 </body>
