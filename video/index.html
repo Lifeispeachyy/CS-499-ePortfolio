@@ -13,77 +13,54 @@
             color: #222;
         }
 
-        header, nav, section {
+        header, section {
             background: #ffffff;
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        nav ul li {
-            margin: 8px 0;
-        }
-
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        hr {
-            margin: 30px 0;
+        iframe {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            display: block;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
 
-<nav>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../artifacts/travlr/">Travlr Getaways</a></li>
-        <li><a href="../artifacts/mongodb/">MongoDB Database</a></li>
-        <li><a href="../artifacts/algorithms/">Algorithms & Data Structures</a></li>
-    </ul>
-</nav>
+    <header>
+        <h1>Informal Code Review</h1>
+        <h2>Planning and Analysis Before Enhancements</h2>
+    </header>
 
-<header>
-    <h1>Informal Code Review</h1>
-    <h2>Planning and Analysis Before Enhancements</h2>
-</header>
+    <section>
+        <h3>Overview</h3>
+        <p>
+            This code review walkthrough explains the existing functionality of the Travlr Getaways application,
+            the MongoDB dashboard system, and the OpenGL 3D scene project. It also identifies areas for improvement
+            and outlines planned enhancements aligned with software engineering, database systems, and algorithms
+            and data structures course outcomes.
+        </p>
+    </section>
 
-<section>
-    <h3>Video Overview</h3>
-    <p>
-        This video explains the existing functionality of the artifacts, identifies areas for improvement,
-        and outlines planned enhancements.
-    </p>
-</section>
+    <section>
+        <h3>Code Review Video</h3>
+        <p>
+            The video below provides a walkthrough of system functionality, design decisions, and planned improvements
+            across all three artifacts.
+        </p>
 
-<section>
-    <h3>Code Review Link</h3>
-    <p>
-        <a href="code-review.html">Code Review Video</a>
-    </p>
-</section>
-
-<section>
-    <h3>Key Points Covered</h3>
-    <ul>
-        <li>Existing functionality</li>
-        <li>Areas for improvement</li>
-        <li>Planned enhancements</li>
-    </ul>
-</section>
+        <iframe 
+            src="https://www.youtube.com/embed/IDauIVZmqqE"
+            title="Code Review Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
 
 </body>
 </html>
