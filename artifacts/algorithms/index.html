@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Algorithms & Data Structures Artifact</title>
-    
-   <style>
+
+    <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 40px;
@@ -20,30 +20,28 @@
             margin-bottom: 20px;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        nav ul li {
-            margin: 8px 0;
-        }
-
-        a {
+        nav a {
+            margin-right: 15px;
             color: #1a73e8;
             text-decoration: none;
             font-weight: 500;
         }
 
-        a:hover {
+        nav a:hover {
             text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
         }
 
         hr {
             margin: 30px 0;
         }
     </style>
-    
 </head>
 
 <body>
@@ -57,41 +55,86 @@
 
     <header>
         <h1>Algorithms & Data Structures Project</h1>
-        <h2>Performance and Structure Enhancement</h2>
+        <h2>Performance and Spatial Optimization Enhancement</h2>
     </header>
 
     <section>
-        <h3>Artifact Description</h3>
+        <h3>Artifact Narrative</h3>
         <p>
-            This artifact demonstrates the use and improvement of algorithms and data structures
-            to enhance efficiency and optimize program performance.
+            This artifact is a C++ OpenGL 3D rendering application developed in CS-330. It demonstrates
+            real-time rendering concepts including transformation matrices, object rendering, lighting,
+            and scene composition using geometric primitives.
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Existing Functionality</h3>
+        <p>
+            The original application renders a 3D scene using a linear object traversal approach. Each object
+            in the scene is processed sequentially during each rendering cycle. The scene includes multiple
+            objects such as a desk, monitor, and accessories, all rendered using transformation matrices
+            and OpenGL pipeline logic.
         </p>
     </section>
 
     <section>
-        <h3>Original vs Enhanced Version</h3>
+        <h3>Areas for Improvement</h3>
         <p>
-<img src="screenshots/before.png" width="700">
-<img src="screenshots/after.png" width="700">
+            The original implementation uses a linear rendering approach that evaluates all objects in the scene
+            regardless of camera position or visibility. This creates scalability limitations as scene complexity
+            increases. Additionally, object management is not spatially optimized, which can lead to unnecessary
+            rendering computations and reduced performance in larger environments.
+        </p>
+    </section>
+
+    <section>
+        <h3>Planned Enhancements</h3>
+        <p>
+            The planned enhancement introduces an Octree spatial partitioning structure to organize scene objects
+            based on their spatial location. This allows the rendering system to reduce unnecessary object processing
+            by only evaluating objects within relevant spatial regions. The Octree implementation improves performance,
+            scalability, and scene management efficiency.
         </p>
     </section>
 
     <section>
         <h3>Enhancements Implemented</h3>
         <ul>
-            <li>Improved algorithm efficiency</li>
-            <li>Optimized data structure usage</li>
-            <li>Reduced unnecessary computations</li>
+            <li>Implemented Octree spatial partitioning structure</li>
+            <li>Added Axis-Aligned Bounding Boxes (AABB) for object classification</li>
+            <li>Improved scene organization through hierarchical spatial subdivision</li>
+            <li>Reduced unnecessary rendering calculations through spatial filtering</li>
         </ul>
     </section>
 
     <section>
         <h3>Skills Demonstrated</h3>
         <ul>
-            <li>Algorithm optimization</li>
-            <li>Data structure selection</li>
-            <li>Performance analysis</li>
+            <li>Algorithm design and optimization</li>
+            <li>Spatial data structures (Octree implementation)</li>
+            <li>Performance analysis and improvement</li>
+            <li>3D graphics programming (OpenGL)</li>
+            <li>Computational geometry and scene management</li>
         </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>System Evidence</h3>
+
+        <p>
+            The following screenshots demonstrate the before and after implementation of the Octree
+            spatial partitioning system and its impact on scene organization.
+        </p>
+
+        <h4>Before Enhancement (Linear Scene Traversal)</h4>
+        <img src="screenshots/before.png">
+
+        <h4>After Enhancement (Octree Spatial Partitioning)</h4>
+        <img src="screenshots/after.png">
     </section>
 
 </body>
