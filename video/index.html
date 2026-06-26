@@ -13,11 +13,22 @@
             color: #222;
         }
 
-        header, section {
+        header, nav, section {
             background: #ffffff;
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
+        }
+
+        nav a {
+            margin-right: 15px;
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         iframe {
@@ -31,6 +42,14 @@
 </head>
 
 <body>
+
+    <!-- NAVIGATION (RESTORED) -->
+    <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../travlr/">Travlr</a>
+        <a href="../mongodb/">MongoDB</a>
+        <a href="../algorithms/">Algorithms</a>
+    </nav>
 
     <header>
         <h1>Informal Code Review</h1>
